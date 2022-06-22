@@ -21,24 +21,20 @@ org 100h
     _loop:
         cmp     byte [bx], 0dh     
         je      _exit                       
-        
         mov     dx, [bx]
         cmp     dx, "hi"
         je      _true
         jne     _false
-
     _true: 
         mov     ah, 09h
         mov     dx, true
         int     21h
         ret
-    
     _false:
         mov     ah, 09h
         mov     dx, false
         int     21h
-        ret
-        
+        ret     
     _exit:
         mov     ax, 4c00h
         int     21h
