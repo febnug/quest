@@ -1,5 +1,5 @@
 ; link tugas : https://t.me/belajarngodingbareng/80683
-; assembling pake FASM di DOSBox
+; assemble pake FASM di DOSBox
 ; fasm boolean.asm
 
 org 100h
